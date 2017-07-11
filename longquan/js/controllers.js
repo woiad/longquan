@@ -570,7 +570,7 @@ angular.module('myApp.controllers',['ionic'])
 		console.log(val)
 		$http({
 			method:'GET',
-			url:'http://25941_8f2b266.php.100dan.cn/js/user.json'
+			url:'https://github.com/woiad/longquan/longquan/js/user.json'
 		}).success(function(data){
 			if(data[val]==undefined){
 				if(val !=undefined){
