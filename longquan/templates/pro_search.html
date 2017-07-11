@@ -1,0 +1,35 @@
+	<ion-view class="search_con" cache-view="false">
+		<ion-header-bar>
+			<div class="buttons pro_search_header">
+					<a class="button icon ion-ios-arrow-left" href="javascript: history.back()"></a>
+					<input type="text"  id="auto" name="auto">
+					<a class="icon ion-ios-search"></a>
+				</div>
+		</ion-header-bar>
+		<ion-content>
+			<div class="search">
+				<h1>历史搜索</h1>
+				<ul >
+					<li ng-repeat="item in seaArr">
+						<a href="#/pro_details">{{item.searName}}</a>
+					</li>
+				</ul>
+			</div>
+			<div class="hot_sear">
+				<h1>热门搜索</h1>
+				<ul>
+					<li ng-repeat="item in seaArr"> 
+						<a href="#/pro_details">{{item.searName}}</a>
+					</li>
+				</ul>
+			</div>
+		</ion-content>
+		<ion-footer-bar class="sea-bar">
+			<div class="sear_footer">
+				<button>
+					<i class="ion-ios-mic"></i>
+					<span>按住说出想要的宝贝</span>
+				</button>
+			</div>
+		</ion-ooter-bar>
+	</ion-view>

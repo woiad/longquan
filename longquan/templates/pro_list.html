@@ -1,0 +1,80 @@
+
+		<ion-header-bar>
+			<div class="buttons prolist_header">
+				<a class="button icon ion-ios-arrow-left" href="javascript: history.back()"></a>
+				<h1 >产品列表</h1>
+				<a class="icon ion-ios-search" href="#/pro_search"></a>
+			</div>
+		</ion-header-bar>
+		<ion-content>
+			<div class="con_title">
+				<h1>筛选</h1>
+			</div>
+			<div class="proList-top">
+				<ul>
+					<li class="active"><p>商品</p></li>
+					<li><p>洞藏系列</p></li>
+					<li><p>龙抬头系列</p></li>
+					<li><p>锁弄井系列</p></li>
+					<li><p>其他系列</p></li>
+				</ul>
+			</div>
+			<div class="prolist_con">
+				<p>
+					<span>价格</span>
+					<span>￥<input type="text" name="minPrice"  ng-blur="mintext($index)" ></span>
+					<span>--</span>
+					<span><i>￥</i><input type="text" name="maxPrice" ng-blur="filter($index)" ></span>
+				</p>
+			</div>
+			<div class="pro">
+				<ul class="goods">
+					<li>
+						商品图片
+					</li>
+					<li>
+						商品名称
+					</li>
+					<li>
+						商品价格
+					</li>
+				</ul>
+				<div class="good_con">
+					<ul>
+						<li ng-repeat="item in prolistShow | orderBy: ['price']">
+							<a href="#/pro_details"><img src="{{item.proPic}}"></a>
+							<div class="good_name">
+								<h1><a href="#/pro_details">{{item.name}}</a></h1>
+								<p>容量： {{item.cap}}</p>
+								<p>香型： {{item.smell}}</p>
+							</div>
+							<div class="right">
+								<p>价格：<span>{{item.price | currency:'￥'}}</span>　</p>
+								<p>原价：<span>{{item.old_pri | currency:'￥'}}</span></p>
+							</div>
+							<a class="join" href="javascript:;" on-tap="addcrat($index)">加入购物车</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</ion-content>
+		<ion-footer-bar class="footer">
+				<div class="tabs tabs-icon-top">
+					<a class="tab-item" href="#/app/home">
+						<i class="icon ion-home"></i>
+						<span class="tab-title">首页</span>
+					</a>
+					<a class="tab-item" href="#/app/pro_categories">
+						<i class="icon ion-android-menu"></i>
+						<span class="tab-title">分类</span>
+					</a>
+					<a class="tab-item" href="#/app/shopcart">
+						<i class="icon ion-android-cart"></i>
+						<span class="tab-title">购物车</span>
+					</a>
+					<a class="tab-item" href="#/app/user">
+						<i class="icon ion-android-person"></i>
+						<span class="tab-title">个人中心</span>
+					</a>
+				</div>
+			</ion-footer-bar>

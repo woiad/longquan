@@ -1,0 +1,39 @@
+
+		<ion-view class="log" cache-view="false">
+			<ion-header-bar>
+				<div class="header">
+					<h1>登录</h1>
+				</div>
+			</ion-header-bar>
+			<ion-content>
+				<div class="img">
+					<img src="img/register.png" alt="">
+					<p>long  quan</p>
+				</div>
+				<form name="formv" novalidate="novalidate">
+					<label>
+						<span>用户名：</span>
+						<input type="text" ng-model="nameLog" name="nameLog" ng-focus="inputfocu()" ng-blur="ipnutblur(nameLog)" required="required">
+						<i ng-show="useEit" ng-bind="useText"></i>
+						<i ng-show="formv.name.$error.required" ng-if="nameBool">用户名不能为空</i>
+					</label>
+					<label>
+						<span>密&nbsp;&nbsp;码:</span>
+						<input type="password" ng-model="pwdLog" name="pwdLog" ng-focus="pawfocu()" required="required" ng-blur="pwdblur(nameLog,pwdLog)">
+						<i ng-show="formv.password.$error.required" ng-if="passBool">密码不能为空</i>
+						<i ng-show="passtip" ng-bind="passText"></i>
+					</label>
+					<label class="c-checkbox">
+						<input type="checkbox"  class="check" ng-model="rember" name=rember>
+						<span></span>
+						<p>记住密码 </p>
+					</label>
+					<a href="javascript:;" class="forget">忘记密码?</a>
+					<a href="#/register" class="reg">还没账号？点击注册</a>
+					<a class="sub" ng-click="login(nameLog,pwdLog,rember)">登&nbsp;&nbsp;录</a>
+				</form>
+				<div class="footer">
+					<i></i>
+				</div>
+			</ion-content>
+		</ion-view>

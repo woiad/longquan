@@ -1,0 +1,27 @@
+		<ion-view cache-view="false">
+			<ion-header-bar>
+				<div class="buttons pro_header">
+					<a class="button icon ion-ios-arrow-left" href="javascript:history.back()"></a>
+					<h1 >产品分类</h1>
+					<a class="icon ion-ios-search" href="#/pro_search"></a>
+				</div>
+			</ion-header-bar>
+			<div class="silide">
+				<ul>
+					<li class="active"><span>洞藏系列</span></li>
+					<li><span>龙抬头系列</span></li>
+					<li><span>锁弄井系列</span></li>
+					<li><span>其他系列</span></li>
+				</ul>
+			</div>
+			<ion-content>
+			<div class="sort_con">
+				<ul>
+					<li ng-repeat="item in sortArr">
+						<a href="#/pro_details"><img ng-src="{{item.srcPic}}" /></a>
+					</li>
+				</ul>
+			</div>
+			</ion-content>
+		</ion-view>
+		

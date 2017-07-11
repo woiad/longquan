@@ -1,0 +1,73 @@
+
+		<ion-view cache-view="false">
+			<ion-header-bar class="p_header">
+				<div class="buttons">
+					<a class="button icon ion-ios-arrow-left" href="javascript:history.back()"></a>
+					<h1 >支付中心</h1>
+				</div>
+			</ion-header-bar>
+			<ion-content>
+				<div class="top">
+					<p>订单生成，待支付</p>
+					<p>收货人：王小二<span>13983350788</span></p>
+					<div class="buttons">
+						<button class="button icon ion-ios-arrow-right"></button>
+						<p >默认地址：重庆市石桥铺雨林商都611室</p>
+					</div>
+					<p>
+						<a href="#/pro_details"><img src="img/pay01.jpg"></a>
+						<a href="#/pro_details">39°锁龙井市酒500ml</a>
+						<span>￥358.00</span>
+						<i>x1</i>
+					</p>
+					<p><span>支付金额</span>￥356.00</p>
+					<a href="javascript:;" class="pay" ng-click="payCom($event)">确认支付</a>
+					<p class="line"></p>
+				</div>
+				<div class="way">
+					<h1>支付方式</h1>
+					<div class="content padding">
+						<div class="list">
+							<a class="item item-icon-right" href="javascript:;">
+								<img src="img/zhifub.jpg">
+								<span>支付宝</span>
+								<span>大额支付，支持银行卡，信用卡</span>
+								<i class="ion-ios-arrow-right"></i>
+							</a>
+							<a class="item item-icon-right" href="javascript:;">
+								<img src="img/weixing.jpg">
+								<span>微信支付</span>
+								<span>支付安全，支持银行卡，信用卡</span>
+								<i class="ion-ios-arrow-right"></i>
+							</a>
+							<a class="item item-icon-right" href="javascript:;">
+								<img src="img/yinlian.jpg">
+								<span>银行卡支付</span>
+								<span>快捷支付，支持银行卡，信用卡</span>
+								<i class="ion-ios-arrow-right"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</ion-centent>
+			</ion-view>
+			<ion-footer-bar class="footer">
+				<div class="tabs tabs-icon-top">
+					<a class="tab-item" href="#/app/home">
+						<i class="icon ion-home"></i>
+						<span class="tab-title">首页</span>
+					</a>
+					<a class="tab-item" href="#/app/pro_categories">
+						<i class="icon ion-android-menu"></i>
+						<span class="tab-title">分类</span>
+					</a>
+					<a class="tab-item" href="#/app/shopcart">
+						<i class="icon ion-android-cart"></i>
+						<span class="tab-title">购物车</span>
+					</a>
+					<a class="tab-item" href="#/app/user">
+						<i class="icon ion-android-person"></i>
+						<span class="tab-title">个人中心</span>
+					</a>
+				</div>
+			</ion-footer-bar>

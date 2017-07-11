@@ -1,0 +1,62 @@
+
+		<ion-view cache-view="false">
+			<ion-header-bar>
+				<div class="buttons com_order_header">
+					<a class="button icon ion-ios-arrow-left" href="javascript:history.back()"></a>
+					<h1 >确认订单</h1>
+					<a class="icon ion-home" href="#/app/home"></a>
+				</div>
+			</ion-header-bar>
+			<ion-content>
+				<div class="addres">
+					<h1>收货人：王小二<span>13983350788</span></h1>
+					<h2>
+						默认地址：重庆市石桥铺雨林商都611室
+						<i class="ion-ios-arrow-right"></i>
+					</h2>
+				</div>
+				<div class="orderList">
+					<ul>
+						<li ng-repeat="item in orderArr">
+							<a href="###"><img src="{{item.img}}"></a>
+							<h1><a href="###">{{item.name}}</a></h1>
+							<p>{{item.price | currency:'￥'}}<span>{{item.num}}</span></p>
+						</li>
+					</ul>
+					<div class="pay_way">
+						<h3>
+							支配方式
+							<i class="ion-ios-arrow-right"></i>
+							<span>货到付款</span><br/>
+							<span>快递配送</span>
+						</h3>
+					</div>
+					<textarea placeholder="给商家留言"></textarea>
+					<div class="act_pri">
+						<p>应付金额：716.00</p>
+						<p>运费：0.00</p>
+						<a class="sub" href="#pay">提交订单</a>
+					</div>
+				</div>
+			</ion-content>
+			<ion-footer-bar class="footer">
+				<div class="tabs tabs-icon-top">
+					<a class="tab-item" href="#/app/home">
+						<i class="icon ion-home"></i>
+						<span class="tab-title">首页</span>
+					</a>
+					<a class="tab-item" href="#/app/pro_categories">
+						<i class="icon ion-android-menu"></i>
+						<span class="tab-title">分类</span>
+					</a>
+					<a class="tab-item" href="#/app/shopcart">
+						<i class="icon ion-android-cart"></i>
+						<span class="tab-title">购物车</span>
+					</a>
+					<a class="tab-item" href="#/app/user">
+						<i class="icon ion-android-person"></i>
+						<span class="tab-title">个人中心</span>
+					</a>
+				</div>
+			</ion-footer-bar>
+		</ion-view>

@@ -1,0 +1,68 @@
+
+		<ion-header-bar>
+			<div class="buttons order_header">
+				<a class="button icon ion-ios-arrow-left" href="javascript:history.back()"></a>
+				<h1 >我的订单</h1>
+				<a class="icon ion-home" href="#/app/home"></a>
+			</div>
+		</ion-header-bar>
+		<ion-content>
+			<ion-tabs class="tabs-striped tabs-top order-item">
+			<ion-tab title="全部">
+				<ion-view class="order_con">
+					<ul>
+						<li ng-repeat="item in myOrderArr">
+							<ion-checkbox></ion-checkbox>
+							<a href="#/pro_details"><img src="{{item.img}}"></a>
+							<h1><a href="#pro_details">{{item.name}}</a></h1>
+							<h2>{{item.price | currency:'￥'}}</h2>
+							<p>
+								<i>{{item.statu}}</i>
+								<i>{{item.num}}</i>
+							</p>
+						</li>
+					</ul>
+				</ion-view>
+			</ion-tab>
+			<ion-tab title="待评价">
+				<ion-view class="order_con">
+					<h3>洞藏系列</h3>
+				</ion-view>
+			</ion-tab>
+			<ion-tab title="待收货">
+				<ion-view class="order_con">
+					<h3>龙抬头系列</h3>
+				</ion-view>
+			</ion-tab>
+			<ion-tab title="待付款">
+				<ion-view class="order_con">
+					<h3>锁弄井系列</h3>
+				</ion-view>
+			</ion-tab>
+			<ion-tab title="待发货">
+				<ion-view class="order_con">
+					<h3>其他系列</h3>
+				</ion-view>
+			</ion-tab>
+		</ion-tabs>
+		</ion-content>
+		<ion-footer-bar class="footer">
+				<div class="tabs tabs-icon-top">
+					<a class="tab-item" href="#/app/home">
+						<i class="icon ion-home"></i>
+						<span class="tab-title">首页</span>
+					</a>
+					<a class="tab-item" href="#/app/pro_categories">
+						<i class="icon ion-android-menu"></i>
+						<span class="tab-title">分类</span>
+					</a>
+					<a class="tab-item" href="#/app/shopcart">
+						<i class="icon ion-android-cart"></i>
+						<span class="tab-title">购物车</span>
+					</a>
+					<a class="tab-item" href="#/app/user">
+						<i class="icon ion-android-person"></i>
+						<span class="tab-title">个人中心</span>
+					</a>
+				</div>
+			</ion-footer-bar>

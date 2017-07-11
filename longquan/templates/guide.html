@@ -1,0 +1,10 @@
+
+		<ion-view>
+			<ion-slide-box class="guide" on-slide-changed="changeSlide($index)" slide-interval=4000 auto-play="true">
+				<ion-slide ng-repeat="x in guideArr">
+					<img ng-src="{{x.img}}" />
+					<a href="./index.html#/login" class="exper">立即体验</a>
+					<a class="pass" href="./index.html#/login">跳过</a>
+				</ion-slide>
+			</ion-slide-box>
+		</ion-view>

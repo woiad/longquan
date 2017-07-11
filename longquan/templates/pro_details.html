@@ -1,0 +1,120 @@
+		<ion-view cache-view="false">
+			<ion-header-bar>
+			<div class="buttons pro_det_header">
+				<a class="button icon ion-ios-arrow-left" href="javascript:history.back()"></a>
+				<h1 >产品详情</h1>
+				<a class="icon ion-home" href="#/app/home"></a>
+			</div>
+		</ion-header-bar>
+		<ion-content>
+			<ion-slide-box auto-play="false" does-continue="true" class="img_slide">
+				<ion-slide>
+					<img src="img/pro_details01_02.jpg" width="100%">
+				</ion-slide>
+				<ion-slide>
+					<img src="img/pro_details01_02.jpg" width="100%">
+				</ion-slide>
+				<ion-slide>
+					<img src="img/pro_details01_02.jpg" width="100%">
+				</ion-slide>
+				<ion-slide>
+					<img src="img/pro_details01_02.jpg" width="100%">
+				</ion-slide>
+				<ion-slide>
+					<img src="img/pro_details01_02.jpg" width="100%">
+				</ion-slide>
+			</ion-slide-box>
+			<div class="deta_con">
+				<div class="top">
+					<h1><i>39°锁龙井市酒500ml</i>*<span>1</span>，其风格高雅别致，
+						富贵而不张扬，其品质高贵而脱俗香味
+					</h1>
+					<p><i>￥358.00</i>瓶</p>
+				</div>
+				<ion-list class="prodetails_list">
+					<ion-item>
+						<a href="javascript:;" class="eva">
+							<span>产品评价</span>
+							<i class="icon ion-ios-arrow-right"></i>
+							<span>5.0分</span>
+							<img src="img/start.jpg">
+							<img src="img/start.jpg">
+							<img src="img/start.jpg">
+							<img src="img/start.jpg">
+							<img src="img/start.jpg">
+						</a>
+					</ion-item>
+					<ion-item>
+						<p class="int" >
+							<span>产品介绍</span>
+						</p>
+						<ul class="mess">
+							<li>
+								<p>酒厂： 吉林省辽源龙泉酒业股份有限公司</p>
+							</li>
+							<li>
+								<p>规格： 1瓶 39度</p>
+							</li>
+							<li>
+								<p>香型： 浓香型</p>
+							</li>
+							<li>
+								<p>容量： 500ml/瓶</p>
+							</li>
+							<li>
+								<p>原料： 优质泉水、高粱、小麦</p>
+							</li>
+							<li>
+								<p>酒精度： 39°</p>
+							</li>
+						</ul>
+					</ion-item>
+					<ion-item>
+						<p class="goods_eva">
+							<span>商品评价</span>
+						</p>
+						<ul class="eva_det"> 
+							<li>
+								<p>物超所值</p>
+							</li>
+							<li>
+								<p>物超所值</p>
+							</li>
+							<li>
+								<p>物超所值</p>
+							</li>
+							<li>
+								<p>物超所值</p>
+							</li>
+						</ul>
+					</ion-item>
+				</ion-list>
+				<div class="more">
+					<a href="javascript:;" on-tap="loadMore()">加载更多</a>
+				</div>
+				<a class="shopcar" href="javascript:;" on-tap="addshopcar()">加入购物车</a>
+				<a class="buy" href="#/comfirm_order" on-tap="buyOnce()">立即购买</a>
+			</div>
+		</ion-content>
+		<ion-footer-bar class="footer">
+				<div class="tabs tabs-icon-top">
+					<a class="tab-item" href="#/app/home">
+						<i class="icon ion-home"></i>
+						<span class="tab-title">首页</span>
+					</a>
+					<a class="tab-item" href="#/app/pro_categories">
+						<i class="icon ion-android-menu"></i>
+						<span class="tab-title">分类</span>
+					</a>
+					<a class="tab-item" href="#/app/shopcart">
+						<i class="icon ion-android-cart"></i>
+						<span class="tab-title">购物车</span>
+					</a>
+					<a class="tab-item" href="#/app/user">
+						<i class="icon ion-android-person"></i>
+						<span class="tab-title">个人中心</span>
+					</a>
+				</div>
+			</ion-footer-bar>
+		</ion-view>
+		
