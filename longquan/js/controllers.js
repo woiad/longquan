@@ -608,7 +608,7 @@ angular.module('myApp.controllers',['ionic'])
 		console.log($scope.user)
 		$http({
 			method:'POST',
-			url:'http://25941_8f2b266.php.100dan.cn/js/index.php',
+			url:'https://github.com/woiad/longquan/longquan/js/index.php',
 			data:$scope.user
 		}).success(function(){
 			alert(1)
@@ -644,7 +644,7 @@ angular.module('myApp.controllers',['ionic'])
 	$scope.ipnutblur = function(val){
 		$http({
 			method:'GET',
-			url:"http://25941_8f2b266.php.100dan.cn/js/user.json"
+			url:"https://github.com/woiad/longquan/longquan/js/user.json"
 		}).success(function(data){
 			if(data[val]==undefined){
 				if(val!=undefined){
@@ -664,7 +664,7 @@ angular.module('myApp.controllers',['ionic'])
 	$scope.pwdblur = function(name,password){
 		$http({
 			method:'GET',
-			url:"http://25941_8f2b266.php.100dan.cn/js/user.json"
+			url:"https://github.com/woiad/longquan/longquan/js/user.json"
 		}).success(function(data){
 			if(name!=undefined && password!=undefined){
 				var exitPwd = data[name].password;
@@ -681,7 +681,7 @@ angular.module('myApp.controllers',['ionic'])
 	$scope.login = function(name,password,check){
 		$http({
 			method:'GET',
-			url:"http://25941_8f2b266.php.100dan.cn/js/user.json"
+			url:"https://github.com/woiad/longquan/longquan/js/user.json"
 		}).success(function(data){
 			if(data[name]!=undefined && data[name].password==password){
 				if(check){
