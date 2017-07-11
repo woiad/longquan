@@ -607,7 +607,7 @@ angular.module('myApp.controllers',['ionic'])
 		$scope.user = {username:name,password:pwd}
 		console.log($scope.user)
 		$http({
-			method:'POST',
+			method:'GET',
 			url:'https://woiad.github.io/longquan/longquan/js/index.php',
 			data:$scope.user
 		}).success(function(){
